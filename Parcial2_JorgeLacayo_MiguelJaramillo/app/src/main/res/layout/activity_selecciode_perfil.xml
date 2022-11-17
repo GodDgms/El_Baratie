@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelecciodePerfil">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Titulo 1 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Universidad Tecnologica de panama"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:id="@+id/lblTitulo"/>
+
+        <!-- Titulo 2 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facultad de Sistema y computacion"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/lblTitulo2"
+            android:layout_below="@+id/lblTitulo"/>
+
+        <!-- Titulo 3 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar perfil"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:id="@+id/lblTitulo3"
+            android:layout_below="@+id/lblTitulo2"/>
+
+        <!-- Seleccion de perfil -->
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblTitulo3"
+            android:id="@+id/rgbSeleccionar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sitio de Estudiante"
+                android:id="@+id/rbSE"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sitio de Estudiante S/U"
+                android:id="@+id/rbSESU"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sitio de Profesor"
+                android:id="@+id/rbSP"/>
+            </RadioGroup>
+
+        <!-- Boton de Seleccion de perfil -->
+        <Button
+            android:id="@+id/BtnSeleccionar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rgbSeleccionar"
+            android:onClick="EntrarSelec"
+            android:layout_marginTop="20dp"
+            android:text="Entrar"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/verpc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/verbono"
+        app:layout_constraintStart_toStartOf="@+id/verbono"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/verbono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/verletra"
+        app:layout_constraintStart_toStartOf="@+id/verletra"
+        app:layout_constraintTop_toBottomOf="@+id/verpc" />
+
+    <TextView
+        android:id="@+id/verletra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/verletrames"
+        app:layout_constraintStart_toStartOf="@+id/verletrames"
+        app:layout_constraintTop_toBottomOf="@+id/verbono" />
+
+    <TextView
+        android:id="@+id/verletrames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/verapro"
+        app:layout_constraintStart_toStartOf="@+id/verapro"
+        app:layout_constraintTop_toBottomOf="@+id/verletra" />
+
+    <TextView
+        android:id="@+id/verapro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verletrames" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="254dp"
+        android:layout_marginBottom="255dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verpc" />
+</androidx.constraintlayout.widget.ConstraintLayout>
